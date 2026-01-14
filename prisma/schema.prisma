@@ -32,6 +32,8 @@ model Session {
   emailVerified Boolean?  @default(false)
   refreshToken        String?
   refreshTokenExpires DateTime?
+
+  @@map("session") // <---- this forces PostgreSQL table name to lowercase 'session'
 }
 
 model QRCode {

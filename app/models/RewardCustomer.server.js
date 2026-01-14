@@ -1,4 +1,4 @@
-import db from "../db.server";
+import { prisma as db } from "../db.server";
 
 export async function getRewardCustomers(shop) {
   return await db.rewardCustomer.findMany({

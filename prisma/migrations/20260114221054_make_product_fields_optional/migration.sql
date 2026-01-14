@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "QRCode" ALTER COLUMN "productId" DROP NOT NULL,
+ALTER COLUMN "productHandle" DROP NOT NULL,
+ALTER COLUMN "productVariantId" DROP NOT NULL;

@@ -1,6 +1,6 @@
 import qrcode from "qrcode";
 import invariant from "tiny-invariant";
-import db from "../db.server";
+import { prisma as db } from "../db.server";
 
 export async function getQRCode(id, graphql) {
   const qrCode = await db.qRCode.findFirst({ where: { id } });
