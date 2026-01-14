@@ -28,4 +28,8 @@ api_version = "2026-04"
 scopes = "write_products,read_orders"
 
 [auth]
-redirect_urls = [ "https://shopify-demo-ks01.onrender.com/api/auth" ]
+redirect_urls = [
+    "https://shopify-demo-ks01.onrender.com/auth/callback",
+    "https://shopify-demo-ks01.onrender.com/auth/shopify/callback",
+    "https://shopify-demo-ks01.onrender.com/api/auth/callback"
+]
