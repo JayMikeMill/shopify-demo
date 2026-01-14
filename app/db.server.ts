@@ -32,4 +32,4 @@ export async function checkSessionTable() {
 }
 
 // Export everything for use in your loaders or server code
-export { prisma, shopifySessionStorage };
+export { prisma as db, shopifySessionStorage };

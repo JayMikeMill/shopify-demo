@@ -1,6 +1,6 @@
 import { redirect } from "react-router";
 import invariant from "tiny-invariant";
-import { prisma as db } from "../db.server";
+import { db } from "../db.server";
 
 import { getDestinationUrl } from "../models/QRCode.server";
 
